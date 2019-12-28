@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/work/fpga/Xilinx/artix7/projects/ds_sound/ds_sound.srcs/sources_1/imports/Downloads/dac_dsm2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_dsm2'
