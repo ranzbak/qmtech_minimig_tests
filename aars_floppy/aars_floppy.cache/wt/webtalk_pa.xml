@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Dec 28 21:57:26 2019">
+<application name="pa" timeStamp="Sat Dec 28 22:56:04 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="205a8d351f0d4151a164aa4290afcdbc" type="ProjectID"/>
 <property name="ProjectIteration" value="16" type="ProjectIteration"/>
@@ -23,12 +23,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
 <property name="EditConstraintSets" value="1" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="6" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="6" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="7" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="7" type="JavaHandler"/>
 <property name="OpenProject" value="1" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="1" type="JavaHandler"/>
 <property name="OpenSource" value="1" type="JavaHandler"/>
-<property name="ProgramDevice" value="5" type="JavaHandler"/>
+<property name="ProgramDevice" value="6" type="JavaHandler"/>
 <property name="RunBitgen" value="11" type="JavaHandler"/>
 <property name="RunImplementation" value="4" type="JavaHandler"/>
 <property name="SetTopNode" value="1" type="JavaHandler"/>
@@ -54,10 +55,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpRunMenu_LAUNCH_STEP" value="1" type="GuiHandlerData"/>
 <property name="ExpRunMenu_SET_INCREMENTAL_IMPLEMENTATION" value="2" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="6" type="GuiHandlerData"/>
+<property name="FPGAChooser_FAMILY" value="1" type="GuiHandlerData"/>
+<property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
+<property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
+<property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="73" type="GuiHandlerData"/>
 <property name="FindAndReplaceAllDialog_CLOSE" value="1" type="GuiHandlerData"/>
 <property name="FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="27" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="28" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="HCodeEditor_BLANK_OPERATIONS" value="5" type="GuiHandlerData"/>
 <property name="HCodeEditor_COMMANDS_TO_FOLD_TEXT" value="1" type="GuiHandlerData"/>
@@ -69,10 +74,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="HInputHandler_UNINDENT_SELECTION" value="3" type="GuiHandlerData"/>
 <property name="IncrementalCompileChooserPanel_AUTOMATICALLY_USE_CHECKPOINT" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_EDIT" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_HELP" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="3" type="GuiHandlerData"/>
 <property name="MainMenuMgr_REPORTS" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_TOOLS" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_VIEW" value="6" type="GuiHandlerData"/>
@@ -86,12 +91,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_AUTO_CONNECT_TARGET" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="4" type="GuiHandlerData"/>
 <property name="PACommandNames_EDIT_CONSTRAINT_SETS" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_REPLACE_IN_FILES" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SET_AS_TOP" value="1" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="2" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="3" type="GuiHandlerData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="1" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="6" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="7" type="GuiHandlerData"/>
 <property name="ProgramOptionsPanelImpl_WRITE_INCREMENTAL_SYNTHESIS" value="2" type="GuiHandlerData"/>
+<property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
+<property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_COPY" value="19" type="GuiHandlerData"/>
 <property name="RDICommands_CUT" value="4" type="GuiHandlerData"/>
 <property name="RDICommands_PASTE" value="2" type="GuiHandlerData"/>
@@ -105,6 +113,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcChooserPanel_CREATE_FILE" value="4" type="GuiHandlerData"/>
 <property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="14" type="GuiHandlerData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="5" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="70" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="19" type="TclMode"/>
 </item>
 </section>
 </application>
