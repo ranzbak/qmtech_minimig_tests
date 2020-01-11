@@ -2,31 +2,35 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Tue Dec 10 20:47:31 2019
-# Process ID: 8523
-# Current directory: /home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1
+# Start of session at: Tue Dec 31 18:19:50 2019
+# Process ID: 10808
+# Current directory: /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1
 # Command line: vivado -log hello_aars_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hello_aars_top.tcl
-# Log file: /home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/hello_aars_top.vds
-# Journal file: /home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/vivado.jou
+# Log file: /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/hello_aars_top.vds
+# Journal file: /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source hello_aars_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/utils_1/imports/synth_1/hello_aars_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/utils_1/imports/synth_1/hello_aars_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top hello_aars_top -part xc7a35tftg256-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8568 
+INFO: Helper process launched with PID 10830 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1688.996 ; gain = 152.684 ; free physical = 2737 ; free virtual = 31039
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1690.602 ; gain = 155.684 ; free physical = 3298 ; free virtual = 28411
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'hello_aars_top' [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/sources_1/new/hello_aars_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'hello_aars_top' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/sources_1/new/hello_aars_top.sv:23]
 	Parameter COUNT_WIDTH bound to: 27 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hello_aars_top' (2#1) [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/sources_1/new/hello_aars_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hello_aars_top' (2#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/sources_1/new/hello_aars_top.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1742.746 ; gain = 206.434 ; free physical = 2763 ; free virtual = 31065
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1745.352 ; gain = 210.434 ; free physical = 3330 ; free virtual = 28438
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,49 +43,50 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1748.684 ; gain = 212.371 ; free physical = 2759 ; free virtual = 31061
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1751.289 ; gain = 216.371 ; free physical = 3328 ; free virtual = 28436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1748.684 ; gain = 212.371 ; free physical = 2759 ; free virtual = 31061
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1751.289 ; gain = 216.371 ; free physical = 3328 ; free virtual = 28436
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
-Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]
-Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hello_aars_top_propImpl.xdc].
+Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]
+Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hello_aars_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hello_aars_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1867.355 ; gain = 0.000 ; free physical = 2665 ; free virtual = 30967
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.023 ; gain = 0.000 ; free physical = 3237 ; free virtual = 28345
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1867.355 ; gain = 0.000 ; free physical = 2665 ; free virtual = 30967
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.023 ; gain = 0.000 ; free physical = 3237 ; free virtual = 28345
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2761 ; free virtual = 31064
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3307 ; free virtual = 28415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2761 ; free virtual = 31064
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3307 ; free virtual = 28415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-8523-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/.Xil/Vivado-10808-jaeger/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2761 ; free virtual = 31064
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3307 ; free virtual = 28415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2761 ; free virtual = 31065
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3307 ; free virtual = 28415
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -117,7 +122,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2749 ; free virtual = 31054
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3294 ; free virtual = 28405
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -131,13 +136,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2599 ; free virtual = 30904
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3174 ; free virtual = 28285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3173 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -149,7 +154,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -173,7 +178,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -186,7 +191,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -198,25 +203,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -248,27 +253,27 @@ Report Instance Areas:
 |1     |top      |       |    45|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.355 ; gain = 331.043 ; free physical = 2598 ; free virtual = 30903
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.023 ; gain = 331.105 ; free physical = 3172 ; free virtual = 28283
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1867.355 ; gain = 212.371 ; free physical = 2652 ; free virtual = 30957
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1867.363 ; gain = 331.043 ; free physical = 2652 ; free virtual = 30957
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1866.023 ; gain = 216.371 ; free physical = 3226 ; free virtual = 28337
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1866.031 ; gain = 331.105 ; free physical = 3228 ; free virtual = 28339
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1870.324 ; gain = 0.000 ; free physical = 2601 ; free virtual = 30906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1868.992 ; gain = 0.000 ; free physical = 3176 ; free virtual = 28287
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+20 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1870.324 ; gain = 464.430 ; free physical = 2691 ; free virtual = 30996
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1870.324 ; gain = 0.000 ; free physical = 2691 ; free virtual = 30996
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1868.992 ; gain = 474.461 ; free physical = 3266 ; free virtual = 28377
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1868.992 ; gain = 0.000 ; free physical = 3266 ; free virtual = 28377
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.runs/synth_1/hello_aars_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.runs/synth_1/hello_aars_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hello_aars_top_utilization_synth.rpt -pb hello_aars_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 10 20:48:08 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 31 18:20:26 2019...

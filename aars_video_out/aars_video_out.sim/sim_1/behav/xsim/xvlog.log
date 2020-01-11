@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aars_video_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/content_routine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module content_routine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/simulation_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation_top

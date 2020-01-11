@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1576007248" LaunchWriteIncrSynthDcp="true">
-  <File Type="PA-TCL" Name="hello_aars_top.tcl"/>
-  <File Type="REPORTS-TCL" Name="hello_aars_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="hello_aars_top.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1577812787" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/hello_aars_top.dcp" LaunchWriteIncrSynthDcp="true">
+  <File Type="VDS-TIMING-PB" Name="hello_aars_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hello_aars_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="hello_aars_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="hello_aars_top_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="hello_aars_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="hello_aars_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="hello_aars_top.vds"/>
+  <File Type="REPORTS-TCL" Name="hello_aars_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="hello_aars_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/hello_aars_top.sv">
@@ -42,6 +45,16 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="impl_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/hello_aars_top.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/synth_1/hello_aars_top.dcp"/>
+        <Attr Name="ImportTime" Val="1576007288"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>

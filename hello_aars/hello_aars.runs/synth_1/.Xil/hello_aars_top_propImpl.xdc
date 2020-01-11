@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/paul/work/fpga/Xilinx/artix7/projects/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc rfile:../../../hello_aars.srcs/constrs_1/new/aars_v001.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/hello_aars/hello_aars.srcs/constrs_1/new/aars_v001.xdc rfile:../../../hello_aars.srcs/constrs_1/new/aars_v001.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N11 [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

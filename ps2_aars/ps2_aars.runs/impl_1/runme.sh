@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/paul/work/fpga/Xilinx/artix7/projects/ps2_aars/ps2_aars.runs/impl_1'
+HD_PWD='/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/ps2_aars/ps2_aars.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log aars_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source aars_top.tcl -notrace
 
 

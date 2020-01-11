@@ -1,0 +1,380 @@
+
+*** Running vivado
+    with args -log aars_video_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aars_video_top.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source aars_video_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/utils_1/imports/synth_1/aars_video_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/utils_1/imports/synth_1/aars_video_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top aars_video_top -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24306 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1723.352 ; gain = 153.715 ; free physical = 5687 ; free virtual = 32145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aars_video_top' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv:23]
+	Parameter C_DELAY bound to: 74000000 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.runs/synth_1/.Xil/Vivado-24250-jaeger/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.runs/synth_1/.Xil/Vivado-24250-jaeger/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.runs/synth_1/.Xil/Vivado-24250-jaeger/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.runs/synth_1/.Xil/Vivado-24250-jaeger/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'content_routine' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/content_routine.sv:23]
+	Parameter h_res bound to: 1280 - type: integer 
+	Parameter v_res bound to: 72 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'content_routine' (3#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/content_routine.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'signal_generator' [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv:23]
+	Parameter HZ_ACT_PIX bound to: 1280 - type: integer 
+	Parameter HZ_FRONT_PORCH bound to: 444 - type: integer 
+	Parameter HZ_SYNC_WIDTH bound to: 76 - type: integer 
+	Parameter HZ_BACK_PORCH bound to: 76 - type: integer 
+	Parameter HZ_TOTAL bound to: 1876 - type: integer 
+	Parameter VT_ACT_LN bound to: 720 - type: integer 
+	Parameter VT_FRONT_PORCH bound to: 5 - type: integer 
+	Parameter VT_SYNC_WIDTH bound to: 5 - type: integer 
+	Parameter VT_BACK_PORCH bound to: 20 - type: integer 
+	Parameter VT_TOTAL bound to: 750 - type: integer 
+	Parameter SYNC_POL bound to: 1'b1 
+	Parameter DE_POL bound to: 1'b1 
+WARNING: [Synth 8-6090] variable 'vt_count_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv:159]
+WARNING: [Synth 8-6090] variable 'vt_count_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv:166]
+WARNING: [Synth 8-6014] Unused sequential element vt_count_enable_reg was removed.  [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'signal_generator' (4#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mygen'. This will prevent further optimization [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv:105]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'aars_video_top' (5#1) [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv:23]
+WARNING: [Synth 8-3331] design content_routine has unconnected port i_y_in[11]
+WARNING: [Synth 8-3331] design content_routine has unconnected port i_y_in[10]
+WARNING: [Synth 8-3331] design content_routine has unconnected port pix_enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1781.070 ; gain = 211.434 ; free physical = 5707 ; free virtual = 32166
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1785.039 ; gain = 215.402 ; free physical = 5704 ; free virtual = 32163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1785.039 ; gain = 215.402 ; free physical = 5704 ; free virtual = 32163
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/constrs_1/new/aars_t100_video.xdc]
+Finished Parsing XDC File [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/constrs_1/new/aars_t100_video.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/constrs_1/new/aars_t100_video.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aars_video_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aars_video_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.742 ; gain = 0.000 ; free physical = 5585 ; free virtual = 32043
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.742 ; gain = 0.000 ; free physical = 5585 ; free virtual = 32043
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5803 ; free virtual = 32245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5803 ; free virtual = 32245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5803 ; free virtual = 32245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5796 ; free virtual = 32238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aars_video_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+Module content_routine 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+Module signal_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mygen/\r_y_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5783 ; free virtual = 32227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5679 ; free virtual = 32123
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5675 ; free virtual = 32120
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |ila_0     |     1|
+|3     |CARRY4    |    29|
+|4     |LUT1      |    43|
+|5     |LUT2      |    32|
+|6     |LUT3      |    17|
+|7     |LUT4      |    27|
+|8     |LUT5      |    45|
+|9     |LUT6      |    23|
+|10    |FDRE      |   136|
+|11    |FDSE      |     9|
+|12    |IBUF      |     2|
+|13    |OBUF      |    34|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------+-----------------+------+
+|      |Instance     |Module           |Cells |
++------+-------------+-----------------+------+
+|1     |top          |                 |   399|
+|2     |  mygen      |signal_generator |   134|
+|3     |  my_routine |content_routine  |   142|
++------+-------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.742 ; gain = 356.105 ; free physical = 5674 ; free virtual = 32119
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1925.742 ; gain = 215.402 ; free physical = 5726 ; free virtual = 32170
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1925.750 ; gain = 356.105 ; free physical = 5726 ; free virtual = 32170
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.750 ; gain = 0.000 ; free physical = 5674 ; free virtual = 32118
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1925.750 ; gain = 530.219 ; free physical = 5771 ; free virtual = 32215
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.750 ; gain = 0.000 ; free physical = 5771 ; free virtual = 32215
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.runs/synth_1/aars_video_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aars_video_top_utilization_synth.rpt -pb aars_video_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 11 13:43:46 2020...

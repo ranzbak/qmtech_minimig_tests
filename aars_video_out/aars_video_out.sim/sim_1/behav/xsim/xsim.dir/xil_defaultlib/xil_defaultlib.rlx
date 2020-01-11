@@ -1,0 +1,12 @@
+0.6
+2019.1
+Sep  4 2019
+09:47:21
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1578346207,verilog,,/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/ila_0/sim/ila_0.v,,clk_wiz_0,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1578346207,verilog,,/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/ip/ila_0/sim/ila_0.v,1578142680,verilog,,,,ila_0,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/aars_video_top.sv,1578426146,systemVerilog,,/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/content_routine.sv,,aars_video_top,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/content_routine.sv,1578509058,systemVerilog,,/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv,,content_routine,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/signal_generator.sv,1578512815,systemVerilog,,/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/simulation_top.sv,,signal_generator,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/paul/work/fpga/Xilinx/artix7/qmtech_minimig_tests/aars_video_out/aars_video_out.srcs/sources_1/new/simulation_top.sv,1578141540,systemVerilog,,,,simulation_top,,,../../../../aars_video_out.srcs/sources_1/ip/clk_wiz_0,,,,,

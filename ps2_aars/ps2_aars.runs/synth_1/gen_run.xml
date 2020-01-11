@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1577186345" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/aars_top.dcp" LaunchWriteIncrSynthDcp="true">
-  <File Type="VDS-TIMING-PB" Name="aars_top_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="aars_top_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="aars_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="aars_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="aars_top.vds"/>
   <File Type="RDS-DCP" Name="aars_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="aars_top_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="aars_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="aars_top_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="aars_top.vds"/>
-  <File Type="REPORTS-TCL" Name="aars_top_reports.tcl"/>
-  <File Type="PA-TCL" Name="aars_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/keyboard.v">
@@ -76,11 +73,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
 </GenRun>
